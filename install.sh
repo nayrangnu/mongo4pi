@@ -15,14 +15,16 @@ install -o mongodb -g nogroup -d /var/log/mongodb/
 install -o mongodb -g nogroup -d /var/lib/mongodb/
 
 echo "Installing config scripts"
-install mongod /etc/init.d
+#install mongod /etc/init.d
+install mongo.conf /etc/init
 install mongodb.conf /etc
 
-echo "Setting mongod to start on boot"
-update-rc.d mongod defaults
+#echo "Setting mongod to start on boot"
+#update-rc.d mongod defaults
 
 echo "Starting mongod"
-/etc/init.d/mongod start
+#/etc/init.d/mongod start
+mongo start
 
 echo "done."
 
