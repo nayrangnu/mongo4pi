@@ -11,3 +11,5 @@ source code repository from which it was built.
 ## Modifications
 
 @svvitale added a simple install.sh script, following the instructions at https://emersonveenstra.net/mongodb-raspberry-pi/
+
+@nayrangnu switched to Upstart for task handling.
